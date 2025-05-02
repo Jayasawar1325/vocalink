@@ -20,7 +20,6 @@ if(process.env.NODE_ENV==="production"){
         res.sendFile(path.join(_-dirname,"../frontend","dist","index.html"))
     })
 }
-conn
  app.use(express.json({limit: "10mb"}))
  app.use(express.urlencoded({extended: true, limit: "10mb"}))
  app.use(cookieParser())
